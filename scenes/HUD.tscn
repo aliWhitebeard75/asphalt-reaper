@@ -1,0 +1,112 @@
+[gd_scene load_steps=2 format=3 uid="uid://hud001"]
+
+[ext_resource type="Script" path="res://scripts/HUD.gd" id="1_hud"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="TopBar" type="Panel" parent="."]
+anchors_preset = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 480.0
+offset_bottom = 52.0
+
+[node name="HBoxInner" type="HBoxContainer" parent="TopBar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = -10.0
+offset_bottom = -6.0
+theme_override_constants/separation = 10
+
+[node name="HealthBar" type="ProgressBar" parent="TopBar/HBoxInner"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.0
+max_value = 100.0
+value = 100.0
+show_percentage = false
+
+[node name="CoinLabel" type="Label" parent="TopBar/HBoxInner"]
+layout_mode = 2
+size_flags_horizontal = 0
+custom_minimum_size = Vector2(86, 0)
+text = "$ 0"
+
+[node name="DistLabel" type="Label" parent="TopBar/HBoxInner"]
+layout_mode = 2
+size_flags_horizontal = 0
+custom_minimum_size = Vector2(86, 0)
+text = "0 m"
+
+[node name="BossSection" type="Panel" parent="."]
+visible = false
+offset_left = 40.0
+offset_top = 58.0
+offset_right = 440.0
+offset_bottom = 94.0
+
+[node name="BossVBox" type="VBoxContainer" parent="BossSection"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = -8.0
+offset_bottom = -4.0
+theme_override_constants/separation = 3
+
+[node name="BossNameLabel" type="Label" parent="BossSection/BossVBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "BOSS"
+theme_override_font_sizes/font_size = 11
+
+[node name="BossBar" type="ProgressBar" parent="BossSection/BossVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+min_value = 0.0
+max_value = 100.0
+value = 100.0
+show_percentage = false
+
+[node name="BossWarning" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.0
+anchor_bottom = 0.0
+offset_left = -180.0
+offset_top = 100.0
+offset_right = 180.0
+offset_bottom = 140.0
+horizontal_alignment = 1
+text = ""
+theme_override_font_sizes/font_size = 22
+
+[node name="PerkNotif" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.0
+anchor_bottom = 0.0
+offset_left = -130.0
+offset_top = 58.0
+offset_right = 130.0
+offset_bottom = 84.0
+horizontal_alignment = 1
+text = ""
+
+[node name="PerkList" type="Label" parent="."]
+anchor_left = 0.0
+anchor_right = 0.0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -210.0
+offset_right = 210.0
+offset_bottom = -8.0
+text = ""

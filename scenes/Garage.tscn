@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://garage001"]
+
+[ext_resource type="Script" path="res://scripts/Garage.gd" id="1_garage"]
+
+[node name="Garage" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_garage")
+
+[node name="BgPanel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MainVBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 18.0
+offset_right = -18.0
+offset_bottom = -18.0
+theme_override_constants/separation = 12
+
+[node name="HeaderPanel" type="Panel" parent="MainVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 78)
+
+[node name="HeaderVBox" type="VBoxContainer" parent="MainVBox/HeaderPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = -8.0
+theme_override_constants/separation = 4
+
+[node name="TitleLabel" type="Label" parent="MainVBox/HeaderPanel/HeaderVBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "GARAGE"
+
+[node name="CoinsLabel" type="Label" parent="MainVBox/HeaderPanel/HeaderVBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "0 coins"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="UpgradeList" type="VBoxContainer" parent="MainVBox/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="PlayBtn" type="Button" parent="MainVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 64)
+text = "START RUN"

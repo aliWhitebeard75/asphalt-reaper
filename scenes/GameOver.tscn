@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=3 uid="uid://gameover001"]
+
+[ext_resource type="Script" path="res://scripts/GameOver.gd" id="1_go"]
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_go")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 160.0
+offset_right = -40.0
+offset_bottom = -160.0
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+theme_override_constants/separation = 12
+
+[node name="TitleLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "WRECKED"
+theme_override_font_sizes/font_size = 36
+
+[node name="DistLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Distance: 0 m"
+theme_override_font_sizes/font_size = 20
+
+[node name="CoinsLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Coins: 0"
+theme_override_font_sizes/font_size = 20
+
+[node name="KillsLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Kills: 0"
+theme_override_font_sizes/font_size = 18
+
+[node name="BestLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Best: 0 m"
+theme_override_font_sizes/font_size = 16
+
+[node name="AchievLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = ""
+theme_override_font_sizes/font_size = 13
+visible = false
+
+[node name="RestartBtn" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 52)
+text = "DRIVE AGAIN"
+theme_override_font_sizes/font_size = 20
+
+[node name="GarageBtn" type="Button" parent="Panel/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 52)
+text = "GARAGE (Upgrades)"
+theme_override_font_sizes/font_size = 18

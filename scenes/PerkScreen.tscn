@@ -1,0 +1,123 @@
+[gd_scene load_steps=2 format=3 uid="uid://perkscreen001"]
+
+[ext_resource type="Script" path="res://scripts/PerkScreen.gd" id="1_perk"]
+
+[node name="PerkScreen" type="CanvasLayer"]
+script = ExtResource("1_perk")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 130.0
+offset_right = -20.0
+offset_bottom = -130.0
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "CHOOSE A PERK"
+theme_override_font_sizes/font_size = 26
+
+[node name="SlotBar" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "SLOTS:  □  □  □"
+theme_override_font_sizes/font_size = 13
+
+[node name="SubLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "Pick 1 of 3"
+theme_override_font_sizes/font_size = 13
+
+[node name="PerkButtons" type="VBoxContainer" parent="Panel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Btn1" type="Button" parent="Panel/VBox/PerkButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 46)
+text = "Perk 1"
+theme_override_font_sizes/font_size = 18
+
+[node name="Desc1" type="Label" parent="Panel/VBox/PerkButtons"]
+layout_mode = 2
+horizontal_alignment = 1
+text = ""
+theme_override_font_sizes/font_size = 12
+
+[node name="Btn2" type="Button" parent="Panel/VBox/PerkButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 46)
+text = "Perk 2"
+theme_override_font_sizes/font_size = 18
+
+[node name="Desc2" type="Label" parent="Panel/VBox/PerkButtons"]
+layout_mode = 2
+horizontal_alignment = 1
+text = ""
+theme_override_font_sizes/font_size = 12
+
+[node name="Btn3" type="Button" parent="Panel/VBox/PerkButtons"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 46)
+text = "Perk 3"
+theme_override_font_sizes/font_size = 18
+
+[node name="Desc3" type="Label" parent="Panel/VBox/PerkButtons"]
+layout_mode = 2
+horizontal_alignment = 1
+text = ""
+theme_override_font_sizes/font_size = 12
+
+[node name="DropSection" type="VBoxContainer" parent="Panel/VBox"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="DropLabel" type="Label" parent="Panel/VBox/DropSection"]
+layout_mode = 2
+horizontal_alignment = 1
+text = "DROP WHICH PERK?"
+theme_override_font_sizes/font_size = 20
+
+[node name="DropBtns" type="VBoxContainer" parent="Panel/VBox/DropSection"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="DropBtn1" type="Button" parent="Panel/VBox/DropSection/DropBtns"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 46)
+text = ""
+theme_override_font_sizes/font_size = 17
+
+[node name="DropBtn2" type="Button" parent="Panel/VBox/DropSection/DropBtns"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 46)
+text = ""
+theme_override_font_sizes/font_size = 17
+
+[node name="DropBtn3" type="Button" parent="Panel/VBox/DropSection/DropBtns"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 46)
+text = ""
+theme_override_font_sizes/font_size = 17

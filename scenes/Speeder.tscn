@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://speeder001"]
+
+[ext_resource type="Script" path="res://scripts/Speeder.gd" id="1_speeder"]
+
+[sub_resource type="RectangleShape2D" id="RectShape_speeder"]
+size = Vector2(28, 44)
+
+[node name="Speeder" type="CharacterBody2D"]
+script = ExtResource("1_speeder")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectShape_speeder")

@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="EntitySpriteConfig" format=3]
+
+[ext_resource type="Script" path="res://scripts/EntitySpriteConfig.gd" id="1_sjfix"]
+
+[resource]
+script = ExtResource("1_sjfix")

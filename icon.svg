@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#1a1a2e"/>
+  <rect x="44" y="20" width="40" height="70" rx="6" fill="#2266ff"/>
+  <rect x="50" y="28" width="28" height="20" rx="3" fill="#88ccff" opacity="0.7"/>
+  <rect x="36" y="36" width="8" height="14" fill="#111"/>
+  <rect x="84" y="36" width="8" height="14" fill="#111"/>
+  <rect x="36" y="62" width="8" height="14" fill="#111"/>
+  <rect x="84" y="62" width="8" height="14" fill="#111"/>
+  <text x="64" y="115" font-family="Arial" font-size="14" fill="#ffcc00" text-anchor="middle" font-weight="bold">ASPHALT REAPER</text>
+</svg>

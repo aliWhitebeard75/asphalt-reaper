@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://shop001"]
+
+[ext_resource type="Script" path="res://scripts/Shop.gd" id="1_shop"]
+
+[node name="Shop" type="Control"]
+script = ExtResource("1_shop")
+anchor_right = 1.0
+anchor_bottom = 1.0
