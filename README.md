@@ -76,5 +76,5 @@ All rights reserved.
 
 ## Contact
 
-Developer: aliWhitebeard75
+Developer: NoMore Games Studio
 GitHub: [@aliWhitebeard75](https://github.com/aliWhitebeard75)
